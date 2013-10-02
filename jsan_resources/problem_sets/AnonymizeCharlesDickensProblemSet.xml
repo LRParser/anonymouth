@@ -1,0 +1,25 @@
+<problem-set>
+	<training name="Authors">
+		<author name="FranzKafka">
+			<document title="FrankKafkaMetamorphosis2.txt">./jsan_resources/corpora/FranzKafka/FrankKafkaMetamorphosis2.txt</document>
+			<document title="FranzKafkaMetamorphosis1.txt">./jsan_resources/corpora/FranzKafka/FranzKafkaMetamorphosis1.txt</document>
+		</author>
+		<author name="JamesJoyce">
+			<document title="Dubliners1.txt">./jsan_resources/corpora/JamesJoyce/Dubliners1.txt</document>
+			<document title="Dubliners2.txt">./jsan_resources/corpora/JamesJoyce/Dubliners2.txt</document>
+		</author>
+		<author name="JaneAusten">
+			<document title="PrideAndPrejudice2.txt">./jsan_resources/corpora/JaneAusten/PrideAndPrejudice2.txt</document>
+			<document title="PrideAndPrejudice1.txt">./jsan_resources/corpora/JaneAusten/PrideAndPrejudice1.txt</document>
+		</author>
+		<author name="~* you *~">
+			<document title="TaleOfTwoCities1.txt">./TaleOfTwoCities1.txt</document>
+			<document title="TaleOfTwoCities2.txt">./TaleOfTwoCities2.txt</document>
+		</author>
+	</training>
+	<test>
+		<author name="~* you *~">
+			<document title="CharlesDickensToAnonymize.txt">./CharlesDickensToAnonymize.txt</document>
+		</author>
+	</test>
+</problem-set>
