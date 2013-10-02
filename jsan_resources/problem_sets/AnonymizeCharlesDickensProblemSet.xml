@@ -13,13 +13,13 @@
 			<document title="PrideAndPrejudice1.txt">./jsan_resources/corpora/JaneAusten/PrideAndPrejudice1.txt</document>
 		</author>
 		<author name="~* you *~">
-			<document title="TaleOfTwoCities1.txt">./TaleOfTwoCities1.txt</document>
-			<document title="TaleOfTwoCities2.txt">./TaleOfTwoCities2.txt</document>
+			<document title="TaleOfTwoCities1.txt">./jsan_resources/corpora/CharlesDickens/TaleOfTwoCities1.txt</document>
+			<document title="TaleOfTwoCities2.txt">./jsan_resources/corpora/CharlesDickens/TaleOfTwoCities2.txt</document>
 		</author>
 	</training>
 	<test>
 		<author name="~* you *~">
-			<document title="CharlesDickensToAnonymize.txt">./CharlesDickensToAnonymize.txt</document>
+			<document title="CharlesDickensToAnonymize.txt">./jsan_resources/corpora/CharlesDickensTextToAnonymize/CharlesDickensToAnonymize.txt</document>
 		</author>
 	</test>
 </problem-set>
