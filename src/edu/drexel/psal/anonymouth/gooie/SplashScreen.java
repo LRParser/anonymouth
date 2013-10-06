@@ -151,7 +151,7 @@ public class SplashScreen extends JFrame {
 	public void hideSplashScreen() {
 		Logger.logln(NAME+"Closing Splash Screen");
 		for (int i = ANIMATION_FRAMES; i >= 0; i--) {
-			splashScreen.setOpacity((float)i/(float)ANIMATION_FRAMES);
+			// splashScreen.setOpacity((float)i/(float)ANIMATION_FRAMES);
 
 			try {
 				Thread.sleep(ANIMATION_SPEED);
