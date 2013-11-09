@@ -14,5 +14,6 @@
 	<classpathentry kind="lib" path="lib/weka_3_7_9.jar"/>
 	<classpathentry kind="lib" path="lib/ui.jar"/>
 	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="lib" path="/home/joe/CS680/anonymouth/lib/junit.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>

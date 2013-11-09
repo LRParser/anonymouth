@@ -57,15 +57,15 @@ public class GUIMain extends javax.swing.JFrame {
 	// ------------------------
 
 	// data
-	protected ProblemSet ps;
-	protected CumulativeFeatureDriver cfd;
-	protected List<CumulativeFeatureDriver> presetCFDs;
+	public ProblemSet ps;
+	public CumulativeFeatureDriver cfd;
+	public List<CumulativeFeatureDriver> presetCFDs;
 	//protected WekaInstancesBuilder wib;
 	protected InstancesBuilder ib;
 	protected Analyzer analysisDriver;
-	protected List<Analyzer> analyzers;
-	protected Thread analysisThread;
-	protected List<String> results;
+	public List<Analyzer> analyzers;
+	public Thread analysisThread;
+	public List<String> results;
 
 	protected String defaultTrainDocsTreeName = "Authors"; 
 	protected Font defaultLabelFont = new Font("Verdana",0,16);
@@ -190,7 +190,7 @@ public class GUIMain extends javax.swing.JFrame {
 	protected JButton analysisExportTrainToCSVJButton;
 	protected JLabel analysisPostAnalysisJLabel;
 	protected JTabbedPane analysisResultsJTabbedPane;
-	protected JButton analysisRunJButton;
+	public JButton analysisRunJButton;
 	protected JButton analysisStopJButton;
 	protected JProgressBar analysisJProgressBar;
 	protected JButton analysisSaveResultsJButton;
@@ -204,7 +204,7 @@ public class GUIMain extends javax.swing.JFrame {
 	protected ButtonGroup analysisTypeButtonGroup;
 	protected JLabel analysisConfigJLabel;
 	protected JRadioButton analysisTrainCVJRadioButton;
-	protected JRadioButton analysisClassTestDocsJRadioButton;
+	public JRadioButton analysisClassTestDocsJRadioButton;
 	protected JLabel analysisResultsJLabel;
 	protected JButton analysisAboutJButton;
 	protected JButton analysisRemoveResultTabJButton;
