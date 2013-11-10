@@ -1,0 +1,350 @@
+setting 'ivy.default.settings.dir' to 'jar:file:/home/joe/CS680/play-2.2.0/framework/sbt/sbt-launch.jar!/org/apache/ivy/core/settings'
+setting 'ivy.basedir' to '/home/joe/CS680/anonymouth/activator-1.0.0/JStyloService/.'
+setting 'ivy.default.conf.dir' to 'jar:file:/home/joe/CS680/play-2.2.0/framework/sbt/sbt-launch.jar!/org/apache/ivy/core/settings'
+impossible to define new type: class not found: org.apache.ivy.plugins.resolver.SshResolver in [] nor Ivy classloader
+impossible to define new type: class not found: org.apache.ivy.plugins.resolver.VsftpResolver in [] nor Ivy classloader
+impossible to define new type: class not found: org.apache.ivy.plugins.version.PatternVersionMatcher in [] nor Ivy classloader
+impossible to define new type: class not found: org.apache.ivy.plugins.trigger.LogTrigger in [] nor Ivy classloader
+impossible to define new type: class not found: org.apache.ivy.ant.AntBuildTrigger in [] nor Ivy classloader
+impossible to define new type: class not found: org.apache.ivy.plugins.resolver.IvyRepResolver in [] nor Ivy classloader
+impossible to define new type: class not found: org.apache.ivy.plugins.signer.bouncycastle.OpenPGPSignatureGenerator in [] nor Ivy classloader
+impossible to define new type: class not found: org.apache.ivy.plugins.conflict.RegexpConflictManager in [] nor Ivy classloader
+impossible to define new type: class not found: org.apache.ivy.plugins.resolver.SFTPResolver in [] nor Ivy classloader
+impossible to define new type: class not found: org.apache.ivy.osgi.updatesite.UpdateSiteResolver in [] nor Ivy classloader
+impossible to define new type: class not found: org.apache.ivy.ant.AntCallTrigger in [] nor Ivy classloader
+impossible to define new type: class not found: org.apache.ivy.plugins.resolver.MirroredURLResolver in [] nor Ivy classloader
+impossible to define new type: class not found: org.apache.ivy.plugins.resolver.packager.PackagerResolver in [] nor Ivy classloader
+impossible to define new type: class not found: org.apache.ivy.plugins.resolver.DualResolver in [] nor Ivy classloader
+impossible to define new type: class not found: org.apache.ivy.plugins.resolver.VfsResolver in [] nor Ivy classloader
+impossible to define new type: class not found: org.apache.ivy.plugins.resolver.JarResolver in [] nor Ivy classloader
+impossible to define new type: class not found: org.apache.ivy.osgi.obr.OBRResolver in [] nor Ivy classloader
+impossible to define glob matcher: org.apache.ivy.plugins.matcher.GlobPatternMatcher was not found.
+setting 'jline.esc.timeout' to '0'
+setting 'java.runtime.name' to 'Java(TM) SE Runtime Environment'
+setting 'sun.boot.library.path' to '/usr/lib/jvm/jdk1.7.0_40/jre/lib/i386'
+setting 'java.vm.version' to '24.0-b56'
+setting 'java.vm.vendor' to 'Oracle Corporation'
+setting 'java.vendor.url' to 'http://java.oracle.com/'
+setting 'path.separator' to ':'
+setting 'java.vm.name' to 'Java HotSpot(TM) Server VM'
+setting 'file.encoding.pkg' to 'sun.io'
+setting 'user.country' to 'US'
+setting 'sun.java.launcher' to 'SUN_STANDARD'
+setting 'sun.os.patch.level' to 'unknown'
+setting 'java.vm.specification.name' to 'Java Virtual Machine Specification'
+setting 'user.dir' to '/home/joe/CS680/anonymouth/activator-1.0.0/JStyloService'
+setting 'java.runtime.version' to '1.7.0_40-b43'
+setting 'sbt.boot.properties' to '/home/joe/CS680/play-2.2.0/framework/sbt/sbt.boot.properties'
+setting 'java.awt.graphicsenv' to 'sun.awt.X11GraphicsEnvironment'
+setting 'java.endorsed.dirs' to '/usr/lib/jvm/jdk1.7.0_40/jre/lib/endorsed'
+setting 'os.arch' to 'i386'
+setting 'java.io.tmpdir' to '/tmp'
+setting 'line.separator' to '
+'
+setting 'java.vm.specification.vendor' to 'Oracle Corporation'
+setting 'os.name' to 'Linux'
+setting 'sun.jnu.encoding' to 'UTF-8'
+setting 'java.library.path' to '/usr/java/packages/lib/i386:/lib:/usr/lib'
+setting 'java.specification.name' to 'Java Platform API Specification'
+setting 'java.class.version' to '51.0'
+setting 'play.home' to '/home/joe/CS680/play-2.2.0/framework'
+setting 'sun.management.compiler' to 'HotSpot Tiered Compilers'
+setting 'os.version' to '3.2.0-54-generic-pae'
+setting 'user.home' to '/home/joe'
+setting 'user.timezone' to 'America/New_York'
+setting 'java.awt.printerjob' to 'sun.print.PSPrinterJob'
+setting 'file.encoding' to 'UTF-8'
+setting 'java.specification.version' to '1.7'
+setting 'java.class.path' to '/home/joe/CS680/play-2.2.0/framework/sbt/sbt-launch.jar'
+setting 'user.name' to 'joe'
+setting 'jline.shutdownhook' to 'false'
+setting 'play.version' to '2.2.0'
+setting 'java.vm.specification.version' to '1.7'
+setting 'sun.java.command' to '/home/joe/CS680/play-2.2.0/framework/sbt/sbt-launch.jar eclipsify'
+setting 'java.home' to '/usr/lib/jvm/jdk1.7.0_40/jre'
+setting 'sun.arch.data.model' to '32'
+setting 'user.language' to 'en'
+setting 'java.specification.vendor' to 'Oracle Corporation'
+setting 'awt.toolkit' to 'sun.awt.X11.XToolkit'
+setting 'java.vm.info' to 'mixed mode'
+setting 'java.version' to '1.7.0_40'
+setting 'java.ext.dirs' to '/usr/lib/jvm/jdk1.7.0_40/jre/lib/ext:/usr/java/packages/lib/ext'
+setting 'sun.boot.class.path' to '/usr/lib/jvm/jdk1.7.0_40/jre/lib/resources.jar:/usr/lib/jvm/jdk1.7.0_40/jre/lib/rt.jar:/usr/lib/jvm/jdk1.7.0_40/jre/lib/sunrsasign.jar:/usr/lib/jvm/jdk1.7.0_40/jre/lib/jsse.jar:/usr/lib/jvm/jdk1.7.0_40/jre/lib/jce.jar:/usr/lib/jvm/jdk1.7.0_40/jre/lib/charsets.jar:/usr/lib/jvm/jdk1.7.0_40/jre/lib/jfr.jar:/usr/lib/jvm/jdk1.7.0_40/jre/classes'
+setting 'java.vendor' to 'Oracle Corporation'
+setting 'file.separator' to '/'
+setting 'java.vendor.url.bug' to 'http://bugreport.sun.com/bugreport/'
+setting 'sun.io.unicode.encoding' to 'UnicodeLittle'
+setting 'sun.cpu.endian' to 'little'
+setting 'sun.desktop' to 'gnome'
+setting 'sun.cpu.isalist' to ''
+setting 'ivy.default.ivy.user.dir' to '/home/joe/CS680/play-2.2.0/framework/../repository'
+setting 'ivy.home' to '/home/joe/CS680/play-2.2.0/framework/../repository'
+setting 'ivy.cache.dir' to '/home/joe/CS680/play-2.2.0/framework/../repository/cache'
+no default cache defined: set to /home/joe/CS680/play-2.2.0/framework/../repository/cache
+setting 'ivy.checksums' to 'sha1,md5'
+setting 'ivy.basedir' to '/home/joe/CS680/play-2.2.0/framework/sbt/boot'
+setting 'basedir' to '/home/joe/CS680/play-2.2.0/framework/sbt/boot'
+setting 'scala' to '2.9.2'
+:: resolving dependencies :: org.scala-sbt#boot-scala;1.0
+	confs: [default]
+	validate = true
+	refresh = false
+resolving dependencies for configuration 'default'
+== resolving dependencies for org.scala-sbt#boot-scala;1.0 [default]
+loadData of org.scala-sbt#boot-scala;1.0 of rootConf=default
+== resolving dependencies org.scala-sbt#boot-scala;1.0->org.scala-lang#scala-compiler;2.9.2 [default->default]
+loadData of org.scala-lang#scala-compiler;2.9.2 of rootConf=default
+	using redefined-public to resolve org.scala-lang#scala-compiler;2.9.2
+redefined-public: Checking cache for: dependency: org.scala-lang#scala-compiler;2.9.2 {default=[default, optional(default)]}
+redefined-public: no namespace defined: using system
+No entry is found in the ModuleDescriptorCache : /home/joe/CS680/play-2.2.0/framework/../repository/cache/org.scala-lang/scala-compiler/ivy-2.9.2.xml
+post 1.3 ivy file: using exact as default matcher
+	resolver not found: null => trying to use the one configured for org.scala-lang#scala-compiler;2.9.2
+	configured resolver found for org.scala-lang#scala-compiler;2.9.2: redefined-public: saving this data
+	found ivy file in cache for org.scala-lang#scala-compiler;2.9.2 (resolved by redefined-public): /home/joe/CS680/play-2.2.0/framework/../repository/cache/org.scala-lang/scala-compiler/ivy-2.9.2.xml
+redefined-public: module revision found in cache: org.scala-lang#scala-compiler;2.9.2
+redefined-public: no latest strategy defined: using default
+	found org.scala-lang#scala-compiler;2.9.2 in redefined-public
+== resolving dependencies org.scala-sbt#boot-scala;1.0->org.scala-lang#scala-compiler;2.9.2 [default->runtime]
+loadData of org.scala-lang#scala-compiler;2.9.2 of rootConf=default
+== resolving dependencies org.scala-sbt#boot-scala;1.0->org.scala-lang#scala-compiler;2.9.2 [default->compile]
+loadData of org.scala-lang#scala-compiler;2.9.2 of rootConf=default
+== resolving dependencies org.scala-lang#scala-compiler;2.9.2->org.scala-lang#scala-library;2.9.2 [compile->master(*)]
+loadData of org.scala-lang#scala-library;2.9.2 of rootConf=default
+	using redefined-public to resolve org.scala-lang#scala-library;2.9.2
+redefined-public: Checking cache for: dependency: org.scala-lang#scala-library;2.9.2 {compile=[compile(*), master(*)], runtime=[runtime(*)]}
+No entry is found in the ModuleDescriptorCache : /home/joe/CS680/play-2.2.0/framework/../repository/cache/org.scala-lang/scala-library/ivy-2.9.2.xml
+post 1.3 ivy file: using exact as default matcher
+	resolver not found: null => trying to use the one configured for org.scala-lang#scala-library;2.9.2
+	configured resolver found for org.scala-lang#scala-library;2.9.2: redefined-public: saving this data
+	found ivy file in cache for org.scala-lang#scala-library;2.9.2 (resolved by redefined-public): /home/joe/CS680/play-2.2.0/framework/../repository/cache/org.scala-lang/scala-library/ivy-2.9.2.xml
+redefined-public: module revision found in cache: org.scala-lang#scala-library;2.9.2
+	found org.scala-lang#scala-library;2.9.2 in redefined-public
+== resolving dependencies org.scala-lang#scala-compiler;2.9.2->org.scala-lang#scala-library;2.9.2 [compile->compile(*)]
+loadData of org.scala-lang#scala-library;2.9.2 of rootConf=default
+== resolving dependencies org.scala-lang#scala-compiler;2.9.2->org.scala-lang#scala-library;2.9.2 [compile->default]
+loadData of org.scala-lang#scala-library;2.9.2 of rootConf=default
+== resolving dependencies org.scala-lang#scala-compiler;2.9.2->org.scala-lang#scala-library;2.9.2 [compile->runtime]
+loadData of org.scala-lang#scala-library;2.9.2 of rootConf=default
+== resolving dependencies org.scala-lang#scala-compiler;2.9.2->org.scala-lang#scala-library;2.9.2 [compile->compile]
+loadData of org.scala-lang#scala-library;2.9.2 of rootConf=default
+== resolving dependencies org.scala-lang#scala-compiler;2.9.2->org.scala-lang#scala-library;2.9.2 [compile->master]
+loadData of org.scala-lang#scala-library;2.9.2 of rootConf=default
+== resolving dependencies org.scala-lang#scala-compiler;2.9.2->org.scala-lang#scala-library;2.9.2 [runtime->runtime(*)]
+loadData of org.scala-lang#scala-library;2.9.2 of rootConf=default
+== resolving dependencies org.scala-lang#scala-compiler;2.9.2->org.scala-lang#scala-library;2.9.2 [runtime->compile]
+loadData of org.scala-lang#scala-library;2.9.2 of rootConf=default
+default is loaded and no conf to load.  Skip loading
+== resolving dependencies org.scala-sbt#boot-scala;1.0->org.scala-lang#scala-compiler;2.9.2 [default->master]
+loadData of org.scala-lang#scala-compiler;2.9.2 of rootConf=default
+== resolving dependencies org.scala-sbt#boot-scala;1.0->org.scala-lang#scala-compiler;2.9.2 [default->optional(default)]
+loadData of org.scala-lang#scala-compiler;2.9.2 of rootConf=default
+== resolving dependencies org.scala-lang#scala-compiler;2.9.2->org.scala-lang#jline;2.9.2 [optional->master(*)]
+loadData of org.scala-lang#jline;2.9.2 of rootConf=default
+	using redefined-public to resolve org.scala-lang#jline;2.9.2
+redefined-public: Checking cache for: dependency: org.scala-lang#jline;2.9.2 {optional=[compile(*), master(*)]}
+	no ivy file in cache for org.scala-lang#jline;2.9.2: tried /home/joe/CS680/play-2.2.0/framework/../repository/cache/org.scala-lang/jline/ivy-2.9.2.xml
+local: no namespace defined: using system
+	no ivy file in cache for org.scala-lang#jline;2.9.2: tried /home/joe/CS680/play-2.2.0/framework/../repository/cache/org.scala-lang/jline/ivy-2.9.2.xml
+	 trying /home/joe/CS680/play-2.2.0/repository/local/org.scala-lang/jline/2.9.2/ivys/ivy.xml
+		tried /home/joe/CS680/play-2.2.0/repository/local/org.scala-lang/jline/2.9.2/ivys/ivy.xml
+	local: resource not reachable for org.scala-lang#jline;2.9.2: res=/home/joe/CS680/play-2.2.0/repository/local/org.scala-lang/jline/2.9.2/ivys/ivy.xml
+	local: no ivy file found for org.scala-lang#jline;2.9.2
+Maven2 Local: no namespace defined: using system
+	no ivy file in cache for org.scala-lang#jline;2.9.2: tried /home/joe/CS680/play-2.2.0/framework/../repository/cache/org.scala-lang/jline/ivy-2.9.2.xml
+	 trying file:///home/joe/.m2/repository/org/scala-lang/jline/2.9.2/jline-2.9.2.pom
+		tried file:///home/joe/.m2/repository/org/scala-lang/jline/2.9.2/jline-2.9.2.pom
+	Maven2 Local: resource not reachable for org/scala-lang#jline;2.9.2: res=file:/home/joe/.m2/repository/org/scala-lang/jline/2.9.2/jline-2.9.2.pom
+	Maven2 Local: no ivy file found for org.scala-lang#jline;2.9.2
+typesafe-ivy-releases: no namespace defined: using system
+	no ivy file in cache for org.scala-lang#jline;2.9.2: tried /home/joe/CS680/play-2.2.0/framework/../repository/cache/org.scala-lang/jline/ivy-2.9.2.xml
+	 trying http://repo.typesafe.com/typesafe/ivy-releases/org.scala-lang/jline/2.9.2/ivys/ivy.xml
+		tried http://repo.typesafe.com/typesafe/ivy-releases/org.scala-lang/jline/2.9.2/ivys/ivy.xml
+HTTP response status: 404 url=http://repo.typesafe.com/typesafe/ivy-releases/org.scala-lang/jline/2.9.2/ivys/ivy.xml
+CLIENT ERROR: Not Found url=http://repo.typesafe.com/typesafe/ivy-releases/org.scala-lang/jline/2.9.2/ivys/ivy.xml
+	typesafe-ivy-releases: resource not reachable for org.scala-lang#jline;2.9.2: res=http://repo.typesafe.com/typesafe/ivy-releases/org.scala-lang/jline/2.9.2/ivys/ivy.xml
+	typesafe-ivy-releases: no ivy file found for org.scala-lang#jline;2.9.2
+sonatype-oss-snapshots: no namespace defined: using system
+	no ivy file in cache for org.scala-lang#jline;2.9.2: tried /home/joe/CS680/play-2.2.0/framework/../repository/cache/org.scala-lang/jline/ivy-2.9.2.xml
+	 trying http://oss.sonatype.org/content/repositories/snapshots/org/scala-lang/jline/2.9.2/jline-2.9.2.pom
+		tried http://oss.sonatype.org/content/repositories/snapshots/org/scala-lang/jline/2.9.2/jline-2.9.2.pom
+HTTP response status: 404 url=http://oss.sonatype.org/content/repositories/snapshots/org/scala-lang/jline/2.9.2/jline-2.9.2.pom
+CLIENT ERROR: Retrieval of /org/scala-lang/jline/2.9.2/jline-2.9.2.pom from M2Repository(id=snapshots) is forbidden by repository policy SNAPSHOT. url=http://oss.sonatype.org/content/repositories/snapshots/org/scala-lang/jline/2.9.2/jline-2.9.2.pom
+	sonatype-oss-snapshots: resource not reachable for org/scala-lang#jline;2.9.2: res=http://oss.sonatype.org/content/repositories/snapshots/org/scala-lang/jline/2.9.2/jline-2.9.2.pom
+	sonatype-oss-snapshots: no ivy file found for org.scala-lang#jline;2.9.2
+Maven Central: no namespace defined: using system
+	no ivy file in cache for org.scala-lang#jline;2.9.2: tried /home/joe/CS680/play-2.2.0/framework/../repository/cache/org.scala-lang/jline/ivy-2.9.2.xml
+	 trying http://repo1.maven.org/maven2/org/scala-lang/jline/2.9.2/jline-2.9.2.pom
+		tried http://repo1.maven.org/maven2/org/scala-lang/jline/2.9.2/jline-2.9.2.pom
+	Maven Central: found md file for org.scala-lang#jline;2.9.2
+		=> http://repo1.maven.org/maven2/org/scala-lang/jline/2.9.2/jline-2.9.2.pom (2.9.2)
+	parser = pom parser
+	no ivy file in cache for org.scala-lang#jline;2.9.2: tried /home/joe/CS680/play-2.2.0/framework/../repository/cache/org.scala-lang/jline/ivy-2.9.2.xml
+downloading http://repo1.maven.org/maven2/org/scala-lang/jline/2.9.2/jline-2.9.2.pom ...
+	Maven Central: downloading http://repo1.maven.org/maven2/org/scala-lang/jline/2.9.2/jline-2.9.2.pom
+		to /home/joe/CS680/play-2.2.0/framework/../repository/cache/org.scala-lang/jline/ivy-2.9.2.xml.original.part
+sha1 file found for http://repo1.maven.org/maven2/org/scala-lang/jline/2.9.2/jline-2.9.2.pom: checking...
+	Maven Central: downloading http://repo1.maven.org/maven2/org/scala-lang/jline/2.9.2/jline-2.9.2.pom.sha1
+		to /tmp/ivytmp4407197143727457078sha1
+sha1 OK for http://repo1.maven.org/maven2/org/scala-lang/jline/2.9.2/jline-2.9.2.pom
+	[SUCCESSFUL ] org.scala-lang#jline;2.9.2!jline.pom(pom.original) (62ms)
+	 trying /home/joe/CS680/play-2.2.0/repository/local/org.scala-lang/jline/2.9.2/jars/jline.jar
+		tried /home/joe/CS680/play-2.2.0/repository/local/org.scala-lang/jline/2.9.2/jars/jline.jar
+	local: resource not reachable for org.scala-lang#jline;2.9.2: res=/home/joe/CS680/play-2.2.0/repository/local/org.scala-lang/jline/2.9.2/jars/jline.jar
+	 trying file:///home/joe/.m2/repository/org/scala-lang/jline/2.9.2/jline-2.9.2.jar
+		tried file:///home/joe/.m2/repository/org/scala-lang/jline/2.9.2/jline-2.9.2.jar
+	Maven2 Local: resource not reachable for org/scala-lang#jline;2.9.2: res=file:/home/joe/.m2/repository/org/scala-lang/jline/2.9.2/jline-2.9.2.jar
+	 trying http://repo.typesafe.com/typesafe/ivy-releases/org.scala-lang/jline/2.9.2/jars/jline.jar
+		tried http://repo.typesafe.com/typesafe/ivy-releases/org.scala-lang/jline/2.9.2/jars/jline.jar
+HTTP response status: 404 url=http://repo.typesafe.com/typesafe/ivy-releases/org.scala-lang/jline/2.9.2/jars/jline.jar
+CLIENT ERROR: Not Found url=http://repo.typesafe.com/typesafe/ivy-releases/org.scala-lang/jline/2.9.2/jars/jline.jar
+	typesafe-ivy-releases: resource not reachable for org.scala-lang#jline;2.9.2: res=http://repo.typesafe.com/typesafe/ivy-releases/org.scala-lang/jline/2.9.2/jars/jline.jar
+	 trying http://oss.sonatype.org/content/repositories/snapshots/org/scala-lang/jline/2.9.2/jline-2.9.2.jar
+		tried http://oss.sonatype.org/content/repositories/snapshots/org/scala-lang/jline/2.9.2/jline-2.9.2.jar
+HTTP response status: 404 url=http://oss.sonatype.org/content/repositories/snapshots/org/scala-lang/jline/2.9.2/jline-2.9.2.jar
+CLIENT ERROR: Retrieval of /org/scala-lang/jline/2.9.2/jline-2.9.2.jar from M2Repository(id=snapshots) is forbidden by repository policy SNAPSHOT. url=http://oss.sonatype.org/content/repositories/snapshots/org/scala-lang/jline/2.9.2/jline-2.9.2.jar
+	sonatype-oss-snapshots: resource not reachable for org/scala-lang#jline;2.9.2: res=http://oss.sonatype.org/content/repositories/snapshots/org/scala-lang/jline/2.9.2/jline-2.9.2.jar
+	 trying http://repo1.maven.org/maven2/org/scala-lang/jline/2.9.2/jline-2.9.2.jar
+		tried http://repo1.maven.org/maven2/org/scala-lang/jline/2.9.2/jline-2.9.2.jar
+no source artifact found for org.scala-lang#jline;2.9.2
+no javadoc artifact found for org.scala-lang#jline;2.9.2
+	default-cache: parsed downloaded md file for org.scala-lang#jline;2.9.2; parsed=org.scala-lang#jline;2.9.2
+	checking org.scala-lang#jline;2.9.2 from Maven Central against [none]
+	module revision kept as first found: org.scala-lang#jline;2.9.2 from Maven Central
+	found org.scala-lang#jline;2.9.2 in Maven Central
+== resolving dependencies org.scala-lang#scala-compiler;2.9.2->org.scala-lang#jline;2.9.2 [optional->compile(*)]
+loadData of org.scala-lang#jline;2.9.2 of rootConf=default
+== resolving dependencies org.scala-lang#jline;2.9.2->org.fusesource.jansi#jansi;1.4 [compile->master(*)]
+loadData of org.fusesource.jansi#jansi;1.4 of rootConf=default
+	using redefined-public to resolve org.fusesource.jansi#jansi;1.4
+redefined-public: Checking cache for: dependency: org.fusesource.jansi#jansi;1.4 {compile=[compile(*), master(*)], runtime=[runtime(*)]}
+No entry is found in the ModuleDescriptorCache : /home/joe/CS680/play-2.2.0/framework/../repository/cache/org.fusesource.jansi/jansi/ivy-1.4.xml
+post 1.3 ivy file: using exact as default matcher
+	resolver not found: sbt-chain => trying to use the one configured for org.fusesource.jansi#jansi;1.4
+	configured resolver found for org.fusesource.jansi#jansi;1.4: redefined-public: saving this data
+	found ivy file in cache for org.fusesource.jansi#jansi;1.4 (resolved by redefined-public): /home/joe/CS680/play-2.2.0/framework/../repository/cache/org.fusesource.jansi/jansi/ivy-1.4.xml
+redefined-public: module revision found in cache: org.fusesource.jansi#jansi;1.4
+	found org.fusesource.jansi#jansi;1.4 in redefined-public
+== resolving dependencies org.scala-lang#jline;2.9.2->org.fusesource.jansi#jansi;1.4 [compile->compile(*)]
+loadData of org.fusesource.jansi#jansi;1.4 of rootConf=default
+== resolving dependencies org.scala-sbt#boot-scala;1.0->org.scala-lang#scala-library;2.9.2 [default->default]
+loadData of org.scala-lang#scala-library;2.9.2 of rootConf=default
+default is loaded and no conf to load.  Skip loading
+== resolving dependencies org.scala-sbt#boot-scala;1.0->org.scala-lang#scala-library;2.9.2 [default->runtime]
+loadData of org.scala-lang#scala-library;2.9.2 of rootConf=default
+default is loaded and no conf to load.  Skip loading
+== resolving dependencies org.scala-sbt#boot-scala;1.0->org.scala-lang#scala-library;2.9.2 [default->compile]
+loadData of org.scala-lang#scala-library;2.9.2 of rootConf=default
+default is loaded and no conf to load.  Skip loading
+== resolving dependencies org.scala-sbt#boot-scala;1.0->org.scala-lang#scala-library;2.9.2 [default->master]
+loadData of org.scala-lang#scala-library;2.9.2 of rootConf=default
+default is loaded and no conf to load.  Skip loading
+Nbr of module to sort : 4
+Sort dependencies of : org.scala-lang#scala-compiler;2.9.2 / Number of dependencies = 2
+Sort dependencies of : org.scala-lang#scala-library;2.9.2 / Number of dependencies = 0
+Sort done for : org.scala-lang#scala-library;2.9.2
+Sort dependencies of : org.scala-lang#jline;2.9.2 / Number of dependencies = 1
+Sort dependencies of : org.fusesource.jansi#jansi;1.4 / Number of dependencies = 1
+Sort done for : org.fusesource.jansi#jansi;1.4
+Sort done for : org.scala-lang#jline;2.9.2
+Sort done for : org.scala-lang#scala-compiler;2.9.2
+Module descriptor is processed : org.scala-lang#scala-library;2.9.2
+Module descriptor is processed : org.scala-lang#jline;2.9.2
+Module descriptor is processed : org.fusesource.jansi#jansi;1.4
+	resolved ivy file produced in /home/joe/CS680/play-2.2.0/framework/sbt/boot/resolution-cache/resolved-org.scala-sbt-boot-scala-1.0.xml
+:: downloading artifacts ::
+	 trying /home/joe/CS680/play-2.2.0/repository/local/org.scala-lang/scala-compiler/2.9.2/jars/scala-compiler.jar
+		tried /home/joe/CS680/play-2.2.0/repository/local/org.scala-lang/scala-compiler/2.9.2/jars/scala-compiler.jar
+	local: resource not reachable for org.scala-lang#scala-compiler;2.9.2: res=/home/joe/CS680/play-2.2.0/repository/local/org.scala-lang/scala-compiler/2.9.2/jars/scala-compiler.jar
+	 trying file:///home/joe/.m2/repository/org/scala-lang/scala-compiler/2.9.2/scala-compiler-2.9.2.jar
+		tried file:///home/joe/.m2/repository/org/scala-lang/scala-compiler/2.9.2/scala-compiler-2.9.2.jar
+	Maven2 Local: resource not reachable for org/scala-lang#scala-compiler;2.9.2: res=file:/home/joe/.m2/repository/org/scala-lang/scala-compiler/2.9.2/scala-compiler-2.9.2.jar
+	 trying http://repo.typesafe.com/typesafe/ivy-releases/org.scala-lang/scala-compiler/2.9.2/jars/scala-compiler.jar
+		tried http://repo.typesafe.com/typesafe/ivy-releases/org.scala-lang/scala-compiler/2.9.2/jars/scala-compiler.jar
+HTTP response status: 404 url=http://repo.typesafe.com/typesafe/ivy-releases/org.scala-lang/scala-compiler/2.9.2/jars/scala-compiler.jar
+CLIENT ERROR: Not Found url=http://repo.typesafe.com/typesafe/ivy-releases/org.scala-lang/scala-compiler/2.9.2/jars/scala-compiler.jar
+	typesafe-ivy-releases: resource not reachable for org.scala-lang#scala-compiler;2.9.2: res=http://repo.typesafe.com/typesafe/ivy-releases/org.scala-lang/scala-compiler/2.9.2/jars/scala-compiler.jar
+	 trying http://oss.sonatype.org/content/repositories/snapshots/org/scala-lang/scala-compiler/2.9.2/scala-compiler-2.9.2.jar
+		tried http://oss.sonatype.org/content/repositories/snapshots/org/scala-lang/scala-compiler/2.9.2/scala-compiler-2.9.2.jar
+HTTP response status: 404 url=http://oss.sonatype.org/content/repositories/snapshots/org/scala-lang/scala-compiler/2.9.2/scala-compiler-2.9.2.jar
+CLIENT ERROR: Retrieval of /org/scala-lang/scala-compiler/2.9.2/scala-compiler-2.9.2.jar from M2Repository(id=snapshots) is forbidden by repository policy SNAPSHOT. url=http://oss.sonatype.org/content/repositories/snapshots/org/scala-lang/scala-compiler/2.9.2/scala-compiler-2.9.2.jar
+	sonatype-oss-snapshots: resource not reachable for org/scala-lang#scala-compiler;2.9.2: res=http://oss.sonatype.org/content/repositories/snapshots/org/scala-lang/scala-compiler/2.9.2/scala-compiler-2.9.2.jar
+	 trying http://repo1.maven.org/maven2/org/scala-lang/scala-compiler/2.9.2/scala-compiler-2.9.2.jar
+		tried http://repo1.maven.org/maven2/org/scala-lang/scala-compiler/2.9.2/scala-compiler-2.9.2.jar
+downloading http://repo1.maven.org/maven2/org/scala-lang/scala-compiler/2.9.2/scala-compiler-2.9.2.jar ...
+	Maven Central: downloading http://repo1.maven.org/maven2/org/scala-lang/scala-compiler/2.9.2/scala-compiler-2.9.2.jar
+		to /home/joe/CS680/play-2.2.0/framework/../repository/cache/org.scala-lang/scala-compiler/jars/scala-compiler-2.9.2.jar.part
+sha1 file found for http://repo1.maven.org/maven2/org/scala-lang/scala-compiler/2.9.2/scala-compiler-2.9.2.jar: checking...
+	Maven Central: downloading http://repo1.maven.org/maven2/org/scala-lang/scala-compiler/2.9.2/scala-compiler-2.9.2.jar.sha1
+		to /tmp/ivytmp9061805908854700279sha1
+sha1 OK for http://repo1.maven.org/maven2/org/scala-lang/scala-compiler/2.9.2/scala-compiler-2.9.2.jar
+	[SUCCESSFUL ] org.scala-lang#scala-compiler;2.9.2!scala-compiler.jar (3901ms)
+	 trying /home/joe/CS680/play-2.2.0/repository/local/org.scala-lang/scala-library/2.9.2/jars/scala-library.jar
+		tried /home/joe/CS680/play-2.2.0/repository/local/org.scala-lang/scala-library/2.9.2/jars/scala-library.jar
+	local: resource not reachable for org.scala-lang#scala-library;2.9.2: res=/home/joe/CS680/play-2.2.0/repository/local/org.scala-lang/scala-library/2.9.2/jars/scala-library.jar
+	 trying file:///home/joe/.m2/repository/org/scala-lang/scala-library/2.9.2/scala-library-2.9.2.jar
+		tried file:///home/joe/.m2/repository/org/scala-lang/scala-library/2.9.2/scala-library-2.9.2.jar
+	Maven2 Local: resource not reachable for org/scala-lang#scala-library;2.9.2: res=file:/home/joe/.m2/repository/org/scala-lang/scala-library/2.9.2/scala-library-2.9.2.jar
+	 trying http://repo.typesafe.com/typesafe/ivy-releases/org.scala-lang/scala-library/2.9.2/jars/scala-library.jar
+		tried http://repo.typesafe.com/typesafe/ivy-releases/org.scala-lang/scala-library/2.9.2/jars/scala-library.jar
+HTTP response status: 404 url=http://repo.typesafe.com/typesafe/ivy-releases/org.scala-lang/scala-library/2.9.2/jars/scala-library.jar
+CLIENT ERROR: Not Found url=http://repo.typesafe.com/typesafe/ivy-releases/org.scala-lang/scala-library/2.9.2/jars/scala-library.jar
+	typesafe-ivy-releases: resource not reachable for org.scala-lang#scala-library;2.9.2: res=http://repo.typesafe.com/typesafe/ivy-releases/org.scala-lang/scala-library/2.9.2/jars/scala-library.jar
+	 trying http://oss.sonatype.org/content/repositories/snapshots/org/scala-lang/scala-library/2.9.2/scala-library-2.9.2.jar
+		tried http://oss.sonatype.org/content/repositories/snapshots/org/scala-lang/scala-library/2.9.2/scala-library-2.9.2.jar
+HTTP response status: 404 url=http://oss.sonatype.org/content/repositories/snapshots/org/scala-lang/scala-library/2.9.2/scala-library-2.9.2.jar
+CLIENT ERROR: Retrieval of /org/scala-lang/scala-library/2.9.2/scala-library-2.9.2.jar from M2Repository(id=snapshots) is forbidden by repository policy SNAPSHOT. url=http://oss.sonatype.org/content/repositories/snapshots/org/scala-lang/scala-library/2.9.2/scala-library-2.9.2.jar
+	sonatype-oss-snapshots: resource not reachable for org/scala-lang#scala-library;2.9.2: res=http://oss.sonatype.org/content/repositories/snapshots/org/scala-lang/scala-library/2.9.2/scala-library-2.9.2.jar
+	 trying http://repo1.maven.org/maven2/org/scala-lang/scala-library/2.9.2/scala-library-2.9.2.jar
+		tried http://repo1.maven.org/maven2/org/scala-lang/scala-library/2.9.2/scala-library-2.9.2.jar
+downloading http://repo1.maven.org/maven2/org/scala-lang/scala-library/2.9.2/scala-library-2.9.2.jar ...
+	Maven Central: downloading http://repo1.maven.org/maven2/org/scala-lang/scala-library/2.9.2/scala-library-2.9.2.jar
+		to /home/joe/CS680/play-2.2.0/framework/../repository/cache/org.scala-lang/scala-library/jars/scala-library-2.9.2.jar.part
+sha1 file found for http://repo1.maven.org/maven2/org/scala-lang/scala-library/2.9.2/scala-library-2.9.2.jar: checking...
+	Maven Central: downloading http://repo1.maven.org/maven2/org/scala-lang/scala-library/2.9.2/scala-library-2.9.2.jar.sha1
+		to /tmp/ivytmp2727241142566314961sha1
+sha1 OK for http://repo1.maven.org/maven2/org/scala-lang/scala-library/2.9.2/scala-library-2.9.2.jar
+	[SUCCESSFUL ] org.scala-lang#scala-library;2.9.2!scala-library.jar (3033ms)
+	 trying http://repo1.maven.org/maven2/org/scala-lang/jline/2.9.2/jline-2.9.2.jar
+		tried http://repo1.maven.org/maven2/org/scala-lang/jline/2.9.2/jline-2.9.2.jar
+downloading http://repo1.maven.org/maven2/org/scala-lang/jline/2.9.2/jline-2.9.2.jar ...
+	Maven Central: downloading http://repo1.maven.org/maven2/org/scala-lang/jline/2.9.2/jline-2.9.2.jar
+		to /home/joe/CS680/play-2.2.0/framework/../repository/cache/org.scala-lang/jline/jars/jline-2.9.2.jar.part
+sha1 file found for http://repo1.maven.org/maven2/org/scala-lang/jline/2.9.2/jline-2.9.2.jar: checking...
+	Maven Central: downloading http://repo1.maven.org/maven2/org/scala-lang/jline/2.9.2/jline-2.9.2.jar.sha1
+		to /tmp/ivytmp6219712784952293914sha1
+sha1 OK for http://repo1.maven.org/maven2/org/scala-lang/jline/2.9.2/jline-2.9.2.jar
+	[SUCCESSFUL ] org.scala-lang#jline;2.9.2!jline.jar (105ms)
+	[NOT REQUIRED] org.fusesource.jansi#jansi;1.4!jansi.jar
+:: resolution report :: resolve 692ms :: artifacts dl 7330ms
+Nbr of module to sort : 4
+Sort dependencies of : org.scala-lang#scala-compiler;2.9.2 / Number of dependencies = 2
+Sort dependencies of : org.scala-lang#scala-library;2.9.2 / Number of dependencies = 0
+Sort done for : org.scala-lang#scala-library;2.9.2
+Sort dependencies of : org.scala-lang#jline;2.9.2 / Number of dependencies = 1
+Sort dependencies of : org.fusesource.jansi#jansi;1.4 / Number of dependencies = 1
+Sort done for : org.fusesource.jansi#jansi;1.4
+Sort done for : org.scala-lang#jline;2.9.2
+Sort done for : org.scala-lang#scala-compiler;2.9.2
+Module descriptor is processed : org.scala-lang#scala-library;2.9.2
+Module descriptor is processed : org.scala-lang#jline;2.9.2
+Module descriptor is processed : org.fusesource.jansi#jansi;1.4
+	report for org.scala-sbt#boot-scala;1.0 default produced in /home/joe/CS680/play-2.2.0/framework/sbt/boot/resolution-cache/org.scala-sbt-boot-scala-default.xml
+	resolve done (692ms resolve - 7330ms download)
+setting 'scala' to '2.9.2'
+:: retrieving :: org.scala-sbt#boot-scala
+	checkUpToDate=true
+no explicit confs given for retrieve, using ivy file: /home/joe/CS680/play-2.2.0/framework/sbt/boot/resolution-cache/resolved-org.scala-sbt-boot-scala-1.0.xml
+using ivy parser to parse /home/joe/CS680/play-2.2.0/framework/sbt/boot/resolution-cache/resolved-org.scala-sbt-boot-scala-1.0.xml
+post 1.3 ivy file: using exact as default matcher
+	confs: [default]
+	retrieving /home/joe/CS680/play-2.2.0/framework/../repository/cache/org.scala-lang/scala-library/jars/scala-library-2.9.2.jar
+		to /home/joe/CS680/play-2.2.0/framework/sbt/boot/scala-2.9.2/lib/scala-library.jar
+	retrieving /home/joe/CS680/play-2.2.0/framework/../repository/cache/org.scala-lang/jline/jars/jline-2.9.2.jar
+		to /home/joe/CS680/play-2.2.0/framework/sbt/boot/scala-2.9.2/lib/jline.jar
+	retrieving /home/joe/CS680/play-2.2.0/framework/../repository/cache/org.scala-lang/scala-compiler/jars/scala-compiler-2.9.2.jar
+		to /home/joe/CS680/play-2.2.0/framework/sbt/boot/scala-2.9.2/lib/scala-compiler.jar
+	retrieving /home/joe/CS680/play-2.2.0/repository/local/org.fusesource.jansi/jansi/1.4/jars/jansi.jar
+		to /home/joe/CS680/play-2.2.0/framework/sbt/boot/scala-2.9.2/lib/jansi.jar
+	4 artifacts copied, 0 already retrieved (20090kB/49ms)
+	retrieve done (49ms)

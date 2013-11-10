@@ -1,0 +1,62 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<project xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://maven.apache.org/POM/4.0.0">
+    <modelVersion>4.0.0</modelVersion>
+    <groupId>com.jamesward</groupId>
+    <artifactId>play-auto-refresh</artifactId>
+    <packaging>jar</packaging>
+    <description>play-auto-refresh</description>
+    <version>0.0.4</version>
+    <name>play-auto-refresh</name>
+    <organization>
+        <name>com.jamesward</name>
+    </organization>
+    <url>http://github.com/jamesward/play-auto-refresh</url>
+    <licenses>
+        <license>
+            <name>MIT License&quot;</name>
+            <url>http://opensource.org/licenses/MIT</url>
+            <distribution>repo</distribution>
+        </license>
+    </licenses>
+    <scm>
+        <url>git@github.com:jamesward/play-auto-refresh.git</url>
+        <connection>scm:git:git@github.com:jamesward/play-auto-refresh.git</connection>
+        <developerConnection>scm:git:https://github.com/webjars/webjars-play.git</developerConnection>
+    </scm>
+    <developers>
+        <developer>
+            <id>jamesward</id>
+            <name>James Ward</name>
+            <url>http://www.jamesward.com</url>
+            <email>james@jamesward.com</email>
+        </developer>
+    </developers>
+    <parent>
+        <groupId>org.sonatype.oss</groupId>
+        <artifactId>oss-parent</artifactId>
+        <version>7</version>
+    </parent>
+    <properties>
+        <sbtVersion>0.12</sbtVersion>
+        <scalaVersion>2.9.2</scalaVersion>
+    </properties>
+    <dependencies>
+        <dependency>
+            <groupId>org.scala-sbt</groupId>
+            <artifactId>sbt</artifactId>
+            <version>0.12.2</version>
+            <scope>provided</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.scala-lang</groupId>
+            <artifactId>scala-library</artifactId>
+            <version>2.9.2</version>
+            <scope>provided</scope>
+        </dependency>
+        <dependency>
+            <groupId>net.databinder</groupId>
+            <artifactId>unfiltered-netty-websockets_2.9.2</artifactId>
+            <version>0.6.8</version>
+        </dependency>
+    </dependencies>
+</project>
