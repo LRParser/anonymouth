@@ -10,3 +10,4 @@ GET     /webjars/*file              controllers.WebJarAssets.at(file)
 
 GET     /texts                  controllers.Application.texts()
 POST     /texts                  controllers.Application.addTexts()
+POST /getStylometryInfoJSON					controllers.Application.getStylometryInfoJSON()

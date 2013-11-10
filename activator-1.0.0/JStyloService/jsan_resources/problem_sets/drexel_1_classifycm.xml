@@ -97,7 +97,7 @@
 	</training>
 	<test>
 		<author name="_Unknown_">
-			<document title="cm_11.txt">./jsan_resources/corpora/drexel_1/cm/cm_11.txt</document>
+			<document title="test.txt">./jsan_resources/corpora/drexel_1/test/test.txt</document>
 		</author>
 	</test>
 </problem-set>

@@ -6,7 +6,7 @@ import edu.drexel.psal.jstylo.GUI.GUIMain;
 import edu.drexel.psal.jstylo.GUI.GUIUpdateInterface;
 import edu.drexel.psal.jstylo.analyzers.WekaAnalyzer;
 import edu.drexel.psal.jstylo.generics.ProblemSet;
-
+import com.jgaap.generics.Document;
 public class JStyloService {
 
 	// TODO build problem set XML dynamically (consider inputs)
@@ -21,7 +21,7 @@ public class JStyloService {
 		
 		// Select Weka SMO
 		WekaAnalyzer tmpAnalyzer = new WekaAnalyzer(Class.forName("weka.classifiers.functions.SMO").newInstance());
-		
+				
 		main.analyzers.add(tmpAnalyzer);
 		
 		GUIUpdateInterface.updateProblemSet(main);
