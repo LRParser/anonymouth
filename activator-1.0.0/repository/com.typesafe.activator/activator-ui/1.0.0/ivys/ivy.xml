@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ivy-module version="2.0" xmlns:e="http://ant.apache.org/ivy/extra">
+	<info organisation="com.typesafe.activator" module="activator-ui" revision="1.0.0" status="release" publication="20130920120834">
+		<description>
+		activator-ui
+		</description>
+	</info>
+	<configurations>
+		<conf name="compile" visibility="public" description=""/>
+		<conf name="runtime" visibility="public" description="" extends="compile"/>
+		<conf name="test" visibility="public" description="" extends="runtime"/>
+		<conf name="provided" visibility="public" description=""/>
+		<conf name="optional" visibility="public" description=""/>
+		
+		
+		
+		
+		<conf name="sources" visibility="public" description=""/>
+		
+		<conf name="pom" visibility="public" description=""/>
+		
+		<conf name="sbtprobes" visibility="public" description=""/>
+	</configurations>
+	<publications>
+		<artifact name="activator-ui" type="jar" ext="jar" conf="compile"/>
+		<artifact name="activator-ui" type="src" ext="jar" conf="sources" e:classifier="sources"/>
+		
+	</publications>
+	<dependencies>
+		
+		<dependency org="org.scala-lang" name="scala-library" rev="2.10.2" conf="compile->default(compile)"/>
+		<dependency org="com.typesafe.activator" name="activator-props" rev="1.0.0" conf="compile->default(compile)"/>
+		<dependency org="com.typesafe.activator" name="activator-ui-common" rev="1.0.0" conf="compile->default(compile)"/>
+		<dependency org="com.typesafe.play" name="play_2.10" rev="2.2.0" conf="compile->default(compile)"/>
+		<dependency org="com.typesafe.play" name="play-test_2.10" rev="2.2.0" conf="test->default(compile)"/>
+		
+		<dependency org="com.novocode" name="junit-interface" rev="0.7" conf="test->default(compile)"/>
+		<dependency org="org.webjars" name="webjars-play_2.10" rev="2.2.0" conf="compile->default(compile)"/>
+		<dependency org="org.webjars" name="requirejs" rev="2.1.8" conf="compile->default(compile)"/>
+		<dependency org="org.webjars" name="jquery" rev="2.0.3" conf="compile->default(compile)"/>
+		<dependency org="org.webjars" name="knockout" rev="2.2.1" conf="compile->default(compile)"/>
+		<dependency org="org.webjars" name="ace" rev="04.09.2013" conf="compile->default(compile)"/>
+		<dependency org="org.webjars" name="require-css" rev="0.0.7-3" conf="compile->default(compile)"/>
+		<dependency org="org.webjars" name="requirejs-text" rev="2.0.10" conf="compile->default(compile)"/>
+		<dependency org="org.webjars" name="keymage" rev="1.0.1" conf="compile->default(compile)"/>
+		<dependency org="commons-io" name="commons-io" rev="2.0.1" conf="compile->default(compile)"/>
+		<dependency org="eu.medsea.mimeutil" name="mime-util" rev="2.1.1" conf="compile->default(compile)"/>
+		<dependency org="org.slf4j" name="slf4j-log4j12" rev="1.6.6" conf="compile->default(compile)"/>
+		<dependency org="org.scala-sbt" name="launcher-interface" rev="0.12.4" conf="provided->default(compile)"/>
+		<dependency org="com.typesafe.sbtrc" name="sbt-rc-remote-controller" rev="1.0-28edcfb4984c8be5e556bad192b62551504aa23d" conf="compile->default(compile);test->test"/>
+		<dependency org="com.typesafe.sbtrc" name="sbt-rc-probe-0-12" rev="1.0-28edcfb4984c8be5e556bad192b62551504aa23d" conf="sbtprobes->default(compile)"/>
+		<dependency org="com.typesafe.sbtrc" name="sbt-rc-ui-interface-0-12" rev="1.0-28edcfb4984c8be5e556bad192b62551504aa23d" conf="sbtprobes->default(compile)"/>
+		<dependency org="com.typesafe.sbtrc" name="sbt-rc-probe-0-13" rev="1.0-28edcfb4984c8be5e556bad192b62551504aa23d" conf="sbtprobes->default(compile)"/>
+		<dependency org="com.typesafe.sbtrc" name="sbt-rc-ui-interface-0-13" rev="1.0-28edcfb4984c8be5e556bad192b62551504aa23d" conf="sbtprobes->default(compile)"/>
+	</dependencies>
+</ivy-module>

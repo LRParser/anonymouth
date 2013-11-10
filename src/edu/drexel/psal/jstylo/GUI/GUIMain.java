@@ -380,7 +380,7 @@ public class GUIMain extends javax.swing.JFrame {
 			
 			setSize(1024, 768);
 			setTitle("JStylo");
-			setIconImage(new ImageIcon(Thread.currentThread().getClass().getResource(ANONConstants.GRAPHICS_PREFIX+"icon32.jpg")).getImage());
+			// setIconImage(new ImageIcon(Thread.currentThread().getClass().getResource(ANONConstants.GRAPHICS_PREFIX+"icon32.jpg")).getImage());
 			
 			{
 				mainJTabbedPane = new JTabbedPane();

@@ -1,0 +1,15 @@
+@(message: String)
+
+@main("JSAN as a Service") {
+
+    <div class="well">
+        <h1>@message</h1>
+    </div>
+    <h1>Text to anonymize</h1>
+    @helper.form(action = routes.Application.addTexts()) {
+    <textarea name="textInput1"></textarea> <br/>
+    <input type="submit" value="Add Text" />
+}
+    
+
+}
