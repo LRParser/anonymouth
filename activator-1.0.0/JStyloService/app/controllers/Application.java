@@ -34,16 +34,9 @@ public class Application extends Controller {
     	return TODO;
     }
     
-    private static String getStylometryAnalysis(String textInput) throws Exception
+    private static String getStylometryAnalysis() throws Exception
     {
-    	
-    	// Save text input as test file
-        PrintWriter out = new PrintWriter("./jsan_resources/corpora/drexel_1/test/test.txt");
-        out.println(textInput);
-        out.close();
-
-        // TODO consider input(s) in call into JStylo service
-        List<String> results = JStyloService.GetJStyloResult(null);
+        List<String> results = JStyloService.GetJStyloResult();
         StringBuilder resultInfo = new StringBuilder();
         for(String result : results) {
         	resultInfo.append(result);
@@ -54,12 +47,8 @@ public class Application extends Controller {
     
     private static String getAnonymouthAnalysis() throws Exception
     {
-    	// Todo: Refer to input text
-		String problemSetPath = "./jsan_resources/problem_sets/Anonymouth_docSet.xml";
-		ProblemSet ps = new ProblemSet(problemSetPath);
 		StringBuilder sb = new StringBuilder();
-
-		ArrayList<String[]> wordsToRemove = AnonymouthService.calculateAnonymouthSuggestions(ps);
+		ArrayList<String[]> wordsToRemove = AnonymouthService.calculateAnonymouthSuggestions();
 		 for(String[] strArr : wordsToRemove) {
 		 	sb.append(strArr[0]+", ");
 		 }
@@ -71,7 +60,13 @@ public class Application extends Controller {
 
     	final Map<String, String[]> values = request().body().asFormUrlEncoded();
         final String textInput = values.get("textInput1")[0];
-        String stylometryInfo = getStylometryAnalysis(textInput);
+        
+    	// Write the test file
+        PrintWriter out = new PrintWriter("./jsan_resources/corpora/drexel_1/test/test.txt");
+        out.println(textInput);
+        out.close();
+        
+        String stylometryInfo = getStylometryAnalysis();
         String wordsToRemoveInfo = getAnonymouthAnalysis();
         StringBuilder resultInfo = new StringBuilder();
         resultInfo.append(stylometryInfo);
@@ -93,7 +88,11 @@ public class Application extends Controller {
         return badRequest(result);
       } else {
         result.put("status", "OK");
-        String resultInfo = getStylometryAnalysis(textInput);
+    	// Write the test file
+        PrintWriter out = new PrintWriter("./jsan_resources/corpora/drexel_1/test/test.txt");
+        out.println(textInput);
+        out.close();
+        String resultInfo = getStylometryAnalysis();
         result.put("message", resultInfo);
         return ok(result);
       }

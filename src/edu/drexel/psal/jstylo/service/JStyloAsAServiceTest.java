@@ -10,7 +10,7 @@ public class JStyloAsAServiceTest {
 
 	@Test
 	public void test() throws Exception {
-		List<String> results = JStyloService.GetJStyloResult(null);
+		List<String> results = JStyloService.GetJStyloResult();
 		for(String result : results) {
 			System.out.println(result);
 		}

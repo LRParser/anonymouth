@@ -10,11 +10,11 @@ import com.jgaap.generics.Document;
 public class JStyloService {
 
 	// TODO build problem set XML dynamically (consider inputs)
-	public static List<String> GetJStyloResult(List<String> inputTexts) throws Exception
+	public static List<String> GetJStyloResult() throws Exception
 	{
 		GUIMain main = new GUIMain();
 		main.analysisClassTestDocsJRadioButton.setSelected(true);
-		String problemSetPath = "jsan_resources/problem_sets/drexel_1_classifycm.xml";
+		String problemSetPath = "jsan_resources/problem_sets/Anonymouth_docSet.xml";
 		main.ps = new ProblemSet(problemSetPath);
 		// Select Basic-9 features
 		main.cfd = main.presetCFDs.get(3);
