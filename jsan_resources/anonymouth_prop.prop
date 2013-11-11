@@ -1,0 +1,16 @@
+#User Preferences
+#Sun Nov 10 20:15:11 EST 2013
+maxFeatures=500
+recentProbSet=/home/joe/CS680/anonymouth/jsan_resources/problem_sets/Anonymouth_docSet2.xml
+filterAddSuggestions=true
+recentFeat=9 feature-set
+translate=false
+autoHighlight=true
+warnQuit=false
+versionAutoSave=false
+highlightSents=true
+recentClass=SMO
+autoSave=false
+highlightColor=0
+fontSize=14
+numOfThreads=1
