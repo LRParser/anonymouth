@@ -78,7 +78,7 @@ public class PreProcessAdvancedWindow extends JDialog {
 	protected PreProcessWindow preProcessWindow;
 	protected GUIMain main;
 	public List<Classifier> classifiers;
-	protected List<CumulativeFeatureDriver> presetCFDs;
+	public List<CumulativeFeatureDriver> presetCFDs;
 	private String[] classifierNames;
 	protected Hashtable<String, String> fullClassPath;
 	protected Hashtable<String, String> shortClassName;
@@ -647,6 +647,7 @@ public class PreProcessAdvancedWindow extends JDialog {
 		
 		classChoiceModel = new DefaultComboBoxModel<String>(classifierNames);
 		classChoice.setModel(classChoiceModel);
+		Logger.logln("Finished initClassifiersList");
 	}
 	
 	/**

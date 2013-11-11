@@ -74,10 +74,10 @@ public class ThePresident {
 		splash = new SplashScreen();
 		splash.showSplashScreen();
 		
-		logo = ImageLoader.getImage(ANONYMOUTH_LOGO_LARGE);
-		aboutLogo = ImageLoader.getImageIcon(ANONYMOUTH_LOGO);
-		dialogLogo = ImageLoader.getImageIcon(ANONYMOUTH_LOGO_SMALL);
-		dialogIcon = ImageLoader.getIcon(ANONYMOUTH_LOGO_SMALL);
+		// logo = ImageLoader.getImage(ANONYMOUTH_LOGO_LARGE);
+		// aboutLogo = ImageLoader.getImageIcon(ANONYMOUTH_LOGO);
+		// dialogLogo = ImageLoader.getImageIcon(ANONYMOUTH_LOGO_SMALL);
+		// dialogIcon = ImageLoader.getIcon(ANONYMOUTH_LOGO_SMALL);
 		
 		if (ANONConstants.IS_MAC) {
 			System.setProperty("WEKA_HOME", "/dev/null");

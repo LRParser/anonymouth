@@ -46,7 +46,7 @@ public class DocumentProcessor {
 	private FunctionWords functionWords;
 	private DataAnalyzer dataAnalyzer;
 	private DocumentMagician documentMagician;
-	private SwingWorker<Void, Void> processing;
+	public SwingWorker<Void, Void> processing;
 
 	/**
 	 * Constructor

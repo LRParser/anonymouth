@@ -120,7 +120,7 @@ public class GUIMain extends JFrame {
 	protected Font normalFont; //The editor's font
 	public Document mainDocPreview; //Allows us to load the main document without having to alter the main.ps.testDocAt(0) directly
 	public EditorDriver editorDriver;
-	protected DocumentProcessor documentProcessor;
+	public DocumentProcessor documentProcessor;
 	
 	//Bottom Button
 	public JButton reProcessButton;
@@ -208,7 +208,12 @@ public class GUIMain extends JFrame {
 	 */
 	public GUIMain() {
 		Logger.logln(NAME+"GUIMain being created...");
+		try {
 		ThePresident.splash.updateText("Initializing Anonymouth");
+		}
+		catch(Exception e) { // Todo: Refactor GUI 
+			}
+		
 		//NOTE, better way to do this? This was the way it was when I came in, not very keen on static references though...
 		inst = this; //Initializing our GUIMain static instance so we can reference the class instances from anywhere.
 		main = this;
@@ -404,8 +409,7 @@ public class GUIMain extends JFrame {
 	 * Initializes all swing components and organizes them in the window
 	 */
 	private void initComponents() {
-		ThePresident.splash.updateText("Setting up main window");
-		
+
 		//LEFT TAB (Anonymity Bar, Results. Actually no longer a tab, just the left side)
 		AnonymityBarTabPane = new JTabbedPane();
 		resultsWindow = new ResultsWindow(this);
@@ -449,8 +453,7 @@ public class GUIMain extends JFrame {
 	/**
 	 * Initializes all other Anonymouth instances and their respective listeners/drivers
 	 */
-	private void initClassesAndListeners() {
-		ThePresident.splash.updateText("Preparing listeners");
+	public void initClassesAndListeners() {
 		
 		/**
 		 * Initialize any remaining Anonymouth classes that will be used throughout the application

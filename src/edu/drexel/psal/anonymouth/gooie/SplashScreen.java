@@ -63,7 +63,7 @@ public class SplashScreen extends JFrame {
 		this.setVisible(false);
 		
 		splashScreen = this;
-		splashImage = ImageLoader.getImage(SPLASH_NAME);
+		// splashImage = ImageLoader.getImage(SPLASH_NAME);
 
 		panel = new JPanel(new BorderLayout()) {
 			private static final long serialVersionUID = 1L;
@@ -72,7 +72,7 @@ public class SplashScreen extends JFrame {
 			public void paintComponent(Graphics g) {
 				super.paintComponent(g);
 				Graphics2D g2d = (Graphics2D)g;
-				g2d.drawImage(splashImage, 0, 0, null);
+				// g2d.drawImage(splashImage, 0, 0, null);
 			}
 		};
 

@@ -1,11 +1,35 @@
-﻿Considering that these 22 tribes were once a single tribal entity, and have been separated time and time again over hundreds of years by the government - it is crucial to maintain communications between the groups as much as possible. The SCTCA itself helps organize the tribes at a high level, but Tribal Digital Village was created to create forums of communication between individuals in the tribes and to bring communications infrastructure to remote reservations. 
-Champaign-Urbana Community Wireless Network is a group of community volunteers and wireless networking developers working on providing low-cost, do-it-yourself alternatives to corporate internet. A mesh network is a co-operative communication network between individual wireless devices. Wireless devices talk directly to each other, rather than connecting through a central access point or router. For example, if your laptop computer had a wireless card in it, and was connected to a mesh network, you would pass data back and forth directly with your neighbors on the network. The data would bounce around until it reached its destination. Your computer would become part of the network itself. All of the connections out of the network (to the public Internet or other networks) would be shared between machines. 
-CUWiN and TDV paired up to install a mesh network in the Mesa Grande reservation, about 50 miles outside of San Diego, California. It is a cluster of just 22 homes in the bottom of a canyon, at the end of a very long, winding and scary dirt road. The residents of Mesa Grande are so remote, there is no mail service, and only phone and dial-up internet service. Tribal Digital Village wanted to provide fast and stable broadband internet for these residents. 
+He felt with his thumb in the painted wood of the mantle the pinholes from tacks that had held stockings forty years ago. This is where we used to have Christmas when I was a boy. He turned and looked out at the waste of the yard. A tangle of dead lilac. The shape of a hedge. On cold winter nights when the electricity was out in a storm we would sit at the fire here, me and my sisters, doing our homework. The boy watched him. Watched shapes claiming him he could not see. We should go, Papa, he said. Yes, the man said. But he didnt.
 
-The project involved a number of steps to get "browseable internet" into each home. Before the installation team even arrived, the folks at TDV installed a backbone link to the rest of their network. This involved installing a dish to recieve a wireless signal from the top of a small mountian overlooking the canyon. This wireless signal linked back up with the rest of the TDV network in Pala, about 35 miles away. This created a network connection that other computers and networking hardware could be connected to, providing access to the public internet. 
+They walked through the diningroom where the firebrick in the hearth was as yellow as the day it was laid because his mother could not bear to see it blackened. The floor buckled from the rainwater. In the livingroom the bones of a small animal dismembered and placed in a pile. Possibly a cat. A glass tumbler by the door. The boy gripped his hand. They went up the stairs and turned and went down the hallway. Small cones of damp plaster standing in the floor. The wooden lathes of the ceiling exposed. He stood in the doorway to his room. A small space under the eaves. This is where I used to sleep. My cot was against this wall. In the nights in their thousands to dream the dreams of a child's imaginings, worlds rich or fearful such as might offer themselves but never the one to be. He pushed open the closet door half expecting to find his childhood things. Raw cold daylight fell through from the roof. Gray as his heart.
 
-The installation team consisted of organizers and technicans from Tribal Digital Village and Champaign Urbana Wireless, and myself from Prometheus. While I am no networking technican, I understand from coordinating the station construction portion of our last four Radio Barnraisings that technical knowledge is less important than organizing skill. I hoped to learn as I went along, and bring my experience of working with technologies as part of a community building excercise. I also hoped to learn about wireless mesh networking, and how the "Barnraising Model" of organizing could be used to install these community networks around the country and world. 
+We should go, Papa. Can we go?
 
+Yes. We can go.
 
-The first step in building the network was to build each wireless node. 
-All in all, the installation took five days. 
+I'm scared.
+
+I know. I'm sorry.
+
+I'm really scared.
+
+It's all right. We shouldnt have come.
+
+Three nights later in the foothills of the eastern mountains he woke in the darkness to hear something coming. He lay with his hands at either side of him. The ground was trembling. It was coming toward them.
+
+Papa? The boy said. Papa?
+
+Shh. It's okay.
+
+What is it, Papa?
+
+It neared, growing louder. Everything trembling. Then it passed beneath them like an underground train and drew away into the night and was gone. The boy clung to him crying, his head buried against his chest. Shh. It's all right.
+
+I'm so scared.
+
+I know. It's all right. It's gone.
+
+What was it, Papa?
+
+It was an earthquake. It's gone now. We're all right. Shh.
+
+In those first years the roads were peopled with refugees shrouded up in their clothing. Wearing masks and goggles, sitting in their rags by the side of the road like ruined aviators. Their barrows heaped with shoddy. Towing wagons or carts. Their eyes bright in their skulls. Creedless shells of men tottering down the causeways like migrants in a feverland. The frailty of everything revealed at last. Old and troubling issues resolved into nothingness and night. 

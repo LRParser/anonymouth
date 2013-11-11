@@ -44,7 +44,7 @@ public class ClustersTutorial extends JFrame {
 	 */
 	private void init() {
 		Logger.logln(NAME+"Initializing clusters tutorial...");
-		tutorial = ImageLoader.getImage(TUTORIAL);
+		// tutorial = ImageLoader.getImage(TUTORIAL);
 		
 		panel = new JPanel() {
 			private static final long serialVersionUID = 1L;
@@ -52,7 +52,7 @@ public class ClustersTutorial extends JFrame {
 			public void paintComponent(Graphics g) {
 				super.paintComponent(g);
 				Graphics2D g2d = (Graphics2D)g;
-				g2d.drawImage(tutorial, 0, 0, null);
+				// g2d.drawImage(tutorial, 0, 0, null);
 			}
 		};
 		

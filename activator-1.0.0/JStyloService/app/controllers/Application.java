@@ -4,18 +4,24 @@ import play.mvc.Controller;
 import play.data.*;
 import play.data.Form.*;
 import play.mvc.Result;
+
 import java.io.*;
 import java.util.Map;
 import java.util.List;
+import java.util.ArrayList;
+
 import play.mvc.Controller;
 import play.mvc.Result;
 import play.mvc.BodyParser;                     
 import play.libs.Json;
 import play.libs.Json.*;                        
 import static play.libs.Json.toJson;
+
 import com.fasterxml.jackson.databind.JsonNode;           
 import com.fasterxml.jackson.databind.node.ObjectNode;    
 
+import edu.drexel.psal.anonymouth.service.AnonymouthService;
+import edu.drexel.psal.jstylo.generics.ProblemSet;
 import edu.drexel.psal.jstylo.service.*;
 
 public class Application extends Controller {
@@ -46,12 +52,34 @@ public class Application extends Controller {
         return resultInfo.toString();
     }
     
+    private static String getAnonymouthAnalysis() throws Exception
+    {
+    	// Todo: Refer to input text
+		String problemSetPath = "./jsan_resources/problem_sets/Anonymouth_docSet.xml";
+		ProblemSet ps = new ProblemSet(problemSetPath);
+		StringBuilder sb = new StringBuilder();
+		
+		// TODO: Understand why this passes in unit test, but fails in web app
+		// ArrayList<String[]> wordsToRemove = AnonymouthService.calculateAnonymouthSuggestions(ps);
+		// for(String[] strArr : wordsToRemove) {
+		// 	sb.append(strArr[0]+", ");
+		// }
+		sb.append("TODO");
+		return sb.toString();
+    
+    }
+    
     public static Result addTexts() throws Exception {
 
     	final Map<String, String[]> values = request().body().asFormUrlEncoded();
         final String textInput = values.get("textInput1")[0];
-        String resultInfo = getStylometryAnalysis(textInput);
-        
+        String stylometryInfo = getStylometryAnalysis(textInput);
+        String wordsToRemoveInfo = getAnonymouthAnalysis();
+        StringBuilder resultInfo = new StringBuilder();
+        resultInfo.append(stylometryInfo);
+        resultInfo.append("\\n");
+        resultInfo.append("Words to remove: \\n");
+        resultInfo.append(wordsToRemoveInfo);
         
         return ok(resultInfo.toString());
     }

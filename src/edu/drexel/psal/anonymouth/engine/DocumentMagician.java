@@ -391,6 +391,7 @@ public class DocumentMagician {
 		authorToRemove = ProblemSet.getDummyAuthor(); 
 		Logger.logln(NAME+"Dummy author: "+authorToRemove);
 		authorSamplesSet = pSetCopy.removeAuthor(authorToRemove);
+		Logger.logln("toModifySet.size is"+toModifySet.size());
 		authorSamplesSet.remove(toModifySet.get(0));
 		noAuthorTrainSet = pSetCopy.getAllTrainDocs();
 		int i = 0;
