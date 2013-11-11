@@ -1,7 +1,7 @@
 #User Preferences
 #Sun Nov 10 20:15:11 EST 2013
 maxFeatures=500
-recentProbSet=/home/joe/CS680/anonymouth/jsan_resources/problem_sets/Anonymouth_docSet2.xml
+recentProbSet=./jsan_resources/problem_sets/Anonymouth_docSet.xml
 filterAddSuggestions=true
 recentFeat=9 feature-set
 translate=false
