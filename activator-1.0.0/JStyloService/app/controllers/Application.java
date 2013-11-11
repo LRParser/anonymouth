@@ -58,13 +58,11 @@ public class Application extends Controller {
 		String problemSetPath = "./jsan_resources/problem_sets/Anonymouth_docSet.xml";
 		ProblemSet ps = new ProblemSet(problemSetPath);
 		StringBuilder sb = new StringBuilder();
-		
-		// TODO: Understand why this passes in unit test, but fails in web app
-		// ArrayList<String[]> wordsToRemove = AnonymouthService.calculateAnonymouthSuggestions(ps);
-		// for(String[] strArr : wordsToRemove) {
-		// 	sb.append(strArr[0]+", ");
-		// }
-		sb.append("TODO");
+
+		ArrayList<String[]> wordsToRemove = AnonymouthService.calculateAnonymouthSuggestions(ps);
+		 for(String[] strArr : wordsToRemove) {
+		 	sb.append(strArr[0]+", ");
+		 }
 		return sb.toString();
     
     }

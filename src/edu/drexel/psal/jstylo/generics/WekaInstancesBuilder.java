@@ -212,10 +212,11 @@ public class WekaInstancesBuilder {
 		public void run() {
 			for (int i = div * threadId; i < Math.min(knownDocsSize, div * (threadId + 1)); i++) {
 				try {
+					Logger.logln("knownDocs size is: "+knownDocs.size());
 					list.add(cfd.createEventSets(knownDocs.get(i)));
 				} catch (Exception e) {
 					Logger.logln("Error extracting features!",LogOut.STDERR);
-					Logger.logln(e.getMessage(),LogOut.STDERR);
+					Logger.logln("Message is: "+e,LogOut.STDERR);
 				}
 			}
 		}

@@ -115,31 +115,39 @@ public class CumulativeFeatureDriver {
 		List<EventSet> esl = new ArrayList<EventSet>();
 		int size = features.size();
 		for (int i = 0; i < size; i++) {
+			Logger.logln("Get EventDriver, process feature"+features.get(i).displayName());
 			EventDriver ed = features.get(i).getUnderlyingEventDriver();
+
 			Document currDoc = doc instanceof StringDocument ?
 					new StringDocument((StringDocument) doc) :
 					new Document(doc.getFilePath(),doc.getAuthor(),doc.getTitle());
 			
 			// apply canonicizers
+					
 			try {
 				for (Canonicizer c: features.get(i).getCanonicizers())
 					currDoc.addCanonicizer(c);
 			} catch (NullPointerException e) {
 				// no canonicizers
 			}
+
 			currDoc.load();
 			currDoc.processCanonicizers();
-			
 			// extract event set
 			String prefix = features.get(i).displayName().replace(" ", "-");
-			EventSet tmpEs = ed.createEventSet(currDoc);
+			if(ed == null) {
+				Logger.logln("ed is null for feature"+features.get(i).displayName());
+				
+			}
+			EventSet tmpEs = ed.createEventSet(currDoc);		
 			tmpEs.setEventSetID(features.get(i).getName()); 
 			EventSet es = new EventSet();
 			es.setAuthor(doc.getAuthor());
 			es.setDocumentName(doc.getTitle());
 			es.setEventSetID(tmpEs.getEventSetID());
-			for (Event e: tmpEs)
+			for (Event e: tmpEs) {
 				es.addEvent(new Event(prefix+"{"+e.getEvent()+"}"));
+			}
 			esl.add(es);
 		}
 		return esl;
