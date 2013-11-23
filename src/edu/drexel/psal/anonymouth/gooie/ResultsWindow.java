@@ -67,6 +67,7 @@ public class ResultsWindow extends JFrame {
 	public ResultsWindow(GUIMain main) {
 		initComponents();
 		initWindow();
+		this.setVisible(false);
 	}
 	
 	/**

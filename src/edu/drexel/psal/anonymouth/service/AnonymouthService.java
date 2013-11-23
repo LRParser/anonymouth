@@ -18,10 +18,11 @@ public class AnonymouthService {
 	 	ThePresident.num_Tagging_Threads = 1;
 		pres.main.documentProcessor.process();
 		pres.main.documentProcessor.processing.get();
-		Thread.sleep(5000L);
 		Logger.logln("Done service call");
-		
-		return pres.main.wordSuggestionsDriver.getTopToRemove();
+		ArrayList<String[]> wordsToRemove = pres.main.wordSuggestionsDriver.getTopToRemove();
+		// TODO: Fully de-couple UI from processing logic
+		pres.main.dispose();
+		return wordsToRemove;
 	}
 	
 }

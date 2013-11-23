@@ -42,7 +42,6 @@ public class DocumentProcessor {
 	
 	private GUIMain main;
 	private EditorDriver editorDriver;
-	private ProgressWindow pw;
 	private FunctionWords functionWords;
 	private DataAnalyzer dataAnalyzer;
 	private DocumentMagician documentMagician;
@@ -129,9 +128,6 @@ public class DocumentProcessor {
 		}
 		
 		try {
-			pw = new ProgressWindow("Processing...", main);
-			pw.run();
-
 			DocumentMagician.numProcessRequests++;
 			String tempDoc = "";
 			functionWords = new FunctionWords();
@@ -141,17 +137,13 @@ public class DocumentProcessor {
 				tempDoc = main.documentPane.getText();
 				Logger.logln(NAME+"Process button pressed for first time (initial run) in editor tab");
 
-				pw.setText("Extracting and Clustering Features...");
 				try {
 					dataAnalyzer.runInitial(documentMagician, main.ppAdvancedDriver.cfd, main.ppAdvancedWindow.classifiers.get(0));
-					pw.setText("Initializing Tagger...");
 					Tagger.initTagger();
-					pw.setText("Classifying Documents...");
 					documentMagician.runWeka();
 					dataAnalyzer.runClusterAnalysis(documentMagician);
 					ClustersDriver.initializeClusterViewer(main,false);
 				} catch(Exception e) {
-					pw.stop();
 					ErrorHandler.fatalProcessingError(e);
 				}
 			} else {
@@ -165,16 +157,11 @@ public class DocumentProcessor {
 							null);
 				} else {
 					documentMagician.setModifiedDocument(tempDoc);
-
-					pw.setText("Extracting and Clustering Features...");
 					try {
 						dataAnalyzer.reRunModified(documentMagician);
-						pw.setText("Initialize Cluster Viewer...");
 						ClustersDriver.initializeClusterViewer(main,false);
-						pw.setText("Classifying Documents...");
 						documentMagician.runWeka();
 					} catch (Exception e) {
-						pw.stop();
 						ErrorHandler.fatalProcessingError(e);
 					}
 				}
@@ -221,7 +208,7 @@ public class DocumentProcessor {
 			main.resultsWindow.resultsLabel.setText("Re-Process your document to get updated ownership probability");
 			main.documentScrollPane.getViewport().setViewPosition(new java.awt.Point(0, 0));
 			main.processed = true;
-			pw.stop();
+			// pw.stop();
 			main.showGUIMain();
 		} catch (Exception e) {
 			// Get current size of heap in bytes

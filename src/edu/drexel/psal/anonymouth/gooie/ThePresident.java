@@ -72,7 +72,7 @@ public class ThePresident {
 	
 	public ThePresident() {
 		splash = new SplashScreen();
-		splash.showSplashScreen();
+		// splash.showSplashScreen();
 		
 		// logo = ImageLoader.getImage(ANONYMOUTH_LOGO_LARGE);
 		// aboutLogo = ImageLoader.getImageIcon(ANONYMOUTH_LOGO);
@@ -156,13 +156,13 @@ public class ThePresident {
 			sessionName = "Anonymouth";
 		}
 		
-		splash.updateText("Preparing Start Window");
+		// splash.updateText("Preparing Start Window");
 		
 		main = new GUIMain();
 		startWindow = new StartWindow(main);
 		
-		splash.hideSplashScreen();
-		startWindow.showStartWindow();
+		// splash.hideSplashScreen();
+		// startWindow.showStartWindow();
 	}
 	
 	/**

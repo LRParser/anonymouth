@@ -36,7 +36,7 @@ public class ClustersTutorial extends JFrame {
 	 */
 	public void openWindow() {
 		this.setLocationRelativeTo(null); // makes it form in the center of the screen
-		this.setVisible(true);
+		this.setVisible(false);
 	}
 	
 	/**

@@ -80,8 +80,8 @@ public class GUIMain extends JFrame {
 	protected Dimension screensize = Toolkit.getDefaultToolkit().getScreenSize();
 	private WindowListener exitListener; //To know when the window is being closed
 	private ComponentListener resizeListener; //To know when the window is resizing (so we can repaint the anonymity bar)
-	public ANONConstants.STATE anonymityBarState = ANONConstants.STATE.VISIBLE;
-	public ANONConstants.STATE suggestionTabsState = ANONConstants.STATE.VISIBLE;
+	public ANONConstants.STATE anonymityBarState = ANONConstants.STATE.HIDDEN;
+	public ANONConstants.STATE suggestionTabsState = ANONConstants.STATE.HIDDEN;
 	
 	//=====================================================================
 	//				LEFT TAB (anonymity bar, results, etc.)
@@ -225,6 +225,7 @@ public class GUIMain extends JFrame {
 		initClassesAndListeners();	//Other class instances and their listeners/drivers
 		
 		DisableFocus.removeAllFocus(this); //Now that everything's added, let's disable focus traversal
+		this.setVisible(false);
 	}
 	
 	/**
@@ -235,14 +236,14 @@ public class GUIMain extends JFrame {
 			public void run() {
 				setExtendedState(MAXIMIZED_BOTH);
 				setLocationRelativeTo(null);
-				main.setVisible(true);
+				main.setVisible(false);
 			}
 		});
 		
 		SwingUtilities.invokeLater(new Runnable() {
 			@Override
 			public void run() {
-				resultsWindow.showResultsWindow();
+				// resultsWindow.showResultsWindow();
 			}
 		});
 	}
@@ -293,6 +294,7 @@ public class GUIMain extends JFrame {
 		}
 				
 		ToolTipManager.sharedInstance().setDismissDelay(20000); //To keep Tool Tips from disappearing so fast
+		this.setVisible(false);
 		this.setDefaultCloseOperation(JFrame.DO_NOTHING_ON_CLOSE); //We're letting the window listener take control of this
 		this.setLocationRelativeTo(null); //Set for in the middle of the screen
 		this.setTitle("Anonymouth");
@@ -440,7 +442,7 @@ public class GUIMain extends JFrame {
 		this.add(anonymityPanel, "width 80!, spany, shrinkprio 1");		//LEFT 		(Anonymity bar, results)
 		this.add(editorTabPane, "width 100:400:, grow, shrinkprio 3");	//MIDDLE	(Editor)
 		this.add(helpersTabPane, "width :353:353, spany, shrinkprio 1");//RIGHT		(Word Suggestions, Translations, etc.)
-
+this.setVisible(false);
 		/**
 		 * This is needed so we can ensure that the Anonymity bar is getting the correct width and height needed
 		 * to draw itself. pack() here calculates the component width and heights, which is what the anonymity
@@ -489,14 +491,14 @@ public class GUIMain extends JFrame {
 							JOptionPane.QUESTION_MESSAGE,
 							UIManager.getIcon("OptionPane.warningIcon"), null, null);
 					if (confirm == 0) {
-						System.exit(0);
+						// System.exit(0);
 					}
 				} else if (PropertiesUtil.getAutoSave()) {
 					Logger.logln(NAME+"Auto-saving document");
 					menuDriver.save(main);
-					System.exit(0);
+					// System.exit(0);
 				} else {
-					System.exit(0);
+					// System.exit(0);
 				}
 			}
 			@Override
@@ -512,7 +514,7 @@ public class GUIMain extends JFrame {
 			@Override
 			public void windowOpened(WindowEvent arg0) {}
 		};
-		this.addWindowListener(exitListener);
+		// this.addWindowListener(exitListener);
 		
 		//So we can repaint the anonymity bar accordingly
 		resizeListener = new ComponentListener() {

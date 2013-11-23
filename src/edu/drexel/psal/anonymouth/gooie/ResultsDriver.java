@@ -33,9 +33,9 @@ public class ResultsDriver {
 		resultsListener = new ActionListener() {
 			@Override
 			public void actionPerformed(ActionEvent e) {
-				main.resultsWindow.showResultsWindow();
+				// main.resultsWindow.showResultsWindow();
 			}
 		};
-		main.resultsButton.addActionListener(resultsListener);
+		// main.resultsButton.addActionListener(resultsListener);
 	}
 }
