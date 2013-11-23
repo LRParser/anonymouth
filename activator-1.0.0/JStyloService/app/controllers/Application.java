@@ -30,6 +30,11 @@ public class Application extends Controller {
         return ok(views.html.index.render("Stylometry Service"));
     }
     
+    public static Result textAnalysis()
+    {
+        return ok(views.html.textanalysis.render("Stylometry Service"));    	    	
+    }
+    
     public static Result texts() {
     	return TODO;
     }

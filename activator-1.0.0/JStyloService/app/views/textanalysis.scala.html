@@ -1,0 +1,20 @@
+@(message: String)
+
+@main("JSAN as a Service") {
+
+<script src="@routes.Assets.at("javascripts/jquery.js")"></script>
+<script src="@routes.Assets.at("javascripts/etherpad.js")"></script>
+
+    <div class="well">
+        <h1>@message</h1>
+    </div>
+    <h2>Text to anonymize</h2>
+    <div id="textPad"></div>
+    
+    <script id="startEtherPad">
+    $(function() {
+    	$('#textPad').pad({'padId':'test'});
+    });
+    </script>
+
+}

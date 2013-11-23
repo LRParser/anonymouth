@@ -4,10 +4,14 @@
 
 GET     /                           controllers.Application.index()
 
-# Map static resources from the /public folder to the /assets URL path
-GET     /assets/*file               controllers.Assets.at(path="/public", file)
-GET     /webjars/*file              controllers.WebJarAssets.at(file)
+
 
 GET     /texts                  controllers.Application.texts()
 POST     /texts                  controllers.Application.addTexts()
 POST /getStylometryInfoJSON					controllers.Application.getStylometryInfoJSON()
+
+GET /textanalysis				controllers.Application.textAnalysis()				
+
+# Map static resources from the /public folder to the /assets URL path
+GET     /assets/*file               controllers.Assets.at(path="/public", file)
+GET     /webjars/*file              controllers.WebJarAssets.at(file)
