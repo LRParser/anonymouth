@@ -1,0 +1,13 @@
+To run the service, type ./bootstrap.md and browse to localhost:9000
+
+Note: To install etherpad on Ubuntu 12.x, follow these steps:
+
+1) Pre-req nodejs install:
+
+http://askubuntu.com/questions/49390/how-do-i-install-the-latest-version-of-node-js
+
+Note: If you've already used apt-get, delete existing node and npm symlinks, and recreate to /usr/bin directory
+
+2) Etherpad install:
+
+https://github.com/ether/etherpad-lite#installation
