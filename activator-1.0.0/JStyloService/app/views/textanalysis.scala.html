@@ -10,11 +10,55 @@
     </div>
     <h2>Text to anonymize</h2>
     <div id="textPad"></div>
-    
+    <button id="processButton"> Process Text <button/>
     <script id="startEtherPad">
+       
     $(function() {
     	$('#textPad').pad({'padId':'test'});
+      	
+      	$.ajaxSetup({
+  			contentType: "application/json; charset=utf-8"
+		});
+      	
+      	function getWordsToReplace()
+      	{
+      		exportText().done(function(currentText) {
+      		var postParams = {"text" : currentText};
+      		var dataToPost = JSON.stringify(postParams);
+      		console.log("Testing with: "+dataToPost);
+      		$.ajax({
+      			type : "POST",
+      			dataType : 'json',
+      			data: dataToPost,
+      			url : "/getAnonymouthInfoJSON"
+      		}).done(function(wordSuggestions) {
+      		
+      			// TODO: Log in etherpad
+      			console.log(wordSuggestions);
+      			// End inner done
+      			});
+      		
+      		// End outer done
+      		});
+      			
+  	
+      	}
+      	
+      	function exportText() {
+	        // Reference: http://stackoverflow.com/questions/4039384/how-do-i-programatically-fetch-the-live-plaintext-contents-of-an-etherpad
+	    	var padId = 'textPad';
+	        var etherPadFrameId = 'epframe'+ padId;
+	        var frameUrl = $('#'+ etherPadFrameId).attr('src').split('?')[0];
+	        var contentsUrl = frameUrl + "/export/txt";
+	        var getFunc = $.get(contentsUrl);
+	        return getFunc;
+     	}
+     	
+     	$('#processButton').click(getWordsToReplace);
+      	
+
     });
     </script>
+
 
 }

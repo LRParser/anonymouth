@@ -21,6 +21,7 @@ import com.fasterxml.jackson.databind.JsonNode;
 import com.fasterxml.jackson.databind.node.ObjectNode;    
 
 import edu.drexel.psal.anonymouth.service.AnonymouthService;
+import edu.drexel.psal.jstylo.generics.Logger;
 import edu.drexel.psal.jstylo.generics.ProblemSet;
 import edu.drexel.psal.jstylo.service.*;
 
@@ -39,8 +40,9 @@ public class Application extends Controller {
     	return TODO;
     }
     
-    private static String getStylometryAnalysis() throws Exception
+    private static String getStylometryAnalysis(String textInput) throws Exception
     {
+    	writeTestTextToProblemSet(textInput);
         List<String> results = JStyloService.GetJStyloResult();
         StringBuilder resultInfo = new StringBuilder();
         for(String result : results) {
@@ -50,36 +52,69 @@ public class Application extends Controller {
         return resultInfo.toString();
     }
     
-    private static String getAnonymouthAnalysis() throws Exception
+    private static void writeTestTextToProblemSet(String textInput) throws Exception
     {
+    	// Write the test file
+        PrintWriter out = new PrintWriter("./jsan_resources/corpora/drexel_1/test/test.txt");
+        out.println(textInput);
+        out.close();
+    }
+    
+    private static ArrayList<String[]> getAnonymouthAnalysis(String textInput) throws Exception
+    {
+    	writeTestTextToProblemSet(textInput);	
 		StringBuilder sb = new StringBuilder();
 		ArrayList<String[]> wordsToRemove = AnonymouthService.calculateAnonymouthSuggestions();
-		 for(String[] strArr : wordsToRemove) {
-		 	sb.append(strArr[0]+", ");
-		 }
-		return sb.toString();
+		return wordsToRemove;   
+    }
     
+    
+    private static String serializeWordsToRemove(ArrayList<String[]> wordsToRemove)
+    {
+        StringBuilder resultInfo = new StringBuilder();
+        for(String[] toRemove : wordsToRemove) {
+            resultInfo.append(toRemove[0]+";");
+        }
+        return resultInfo.toString();
+    	
     }
     
     public static Result addTexts() throws Exception {
 
     	final Map<String, String[]> values = request().body().asFormUrlEncoded();
         final String textInput = values.get("textInput1")[0];
-        
-    	// Write the test file
-        PrintWriter out = new PrintWriter("./jsan_resources/corpora/drexel_1/test/test.txt");
-        out.println(textInput);
-        out.close();
-        
-        String stylometryInfo = getStylometryAnalysis();
-        String wordsToRemoveInfo = getAnonymouthAnalysis();
+              
+        String stylometryInfo = getStylometryAnalysis(textInput);
+        ArrayList<String[]> wordsToRemove = getAnonymouthAnalysis(textInput);
         StringBuilder resultInfo = new StringBuilder();
         resultInfo.append(stylometryInfo);
-        resultInfo.append("\\n");
-        resultInfo.append("Words to remove: \\n");
-        resultInfo.append(wordsToRemoveInfo);
+        resultInfo.append("<br/>");
+        resultInfo.append("Words to remove: ");
+        resultInfo.append(serializeWordsToRemove(wordsToRemove));
+
         
         return ok(resultInfo.toString());
+    }
+    
+
+    @BodyParser.Of(BodyParser.Json.class)
+    public static Result getAnonymouthInfoJSON() throws Exception {
+      //RequestBody body = request().body();
+      //Logger.logln(body.asText());
+      JsonNode json = request().body().asJson();
+      ObjectNode result = Json.newObject();
+      Logger.logln(json.asText());
+      String textInput = json.findPath("text").textValue();
+      if(textInput == null) {
+        result.put("status", "KO");
+        result.put("message", "Missing parameter [text]");
+        return badRequest(result);
+      } else {
+        result.put("status", "OK");
+        ArrayList<String[]> wordsToRemove = getAnonymouthAnalysis(textInput);
+        result.put("message", serializeWordsToRemove(wordsToRemove));
+        return ok(result);
+      }
     }
     
     @BodyParser.Of(BodyParser.Json.class)
@@ -94,10 +129,7 @@ public class Application extends Controller {
       } else {
         result.put("status", "OK");
     	// Write the test file
-        PrintWriter out = new PrintWriter("./jsan_resources/corpora/drexel_1/test/test.txt");
-        out.println(textInput);
-        out.close();
-        String resultInfo = getStylometryAnalysis();
+        String resultInfo = getStylometryAnalysis(textInput);
         result.put("message", resultInfo);
         return ok(result);
       }

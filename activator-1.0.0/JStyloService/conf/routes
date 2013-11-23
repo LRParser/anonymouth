@@ -9,6 +9,9 @@ GET     /                           controllers.Application.index()
 GET     /texts                  controllers.Application.texts()
 POST     /texts                  controllers.Application.addTexts()
 POST /getStylometryInfoJSON					controllers.Application.getStylometryInfoJSON()
+POST /getAnonymouthInfoJSON					controllers.Application.getAnonymouthInfoJSON()
+
+
 
 GET /textanalysis				controllers.Application.textAnalysis()				
 
