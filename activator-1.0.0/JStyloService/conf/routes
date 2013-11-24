@@ -2,7 +2,7 @@
 # This file defines all application routes (Higher priority routes first)
 # ~~~~
 
-GET     /                           controllers.Application.index()
+GET     /                           controllers.Application.textAnalysis()
 
 
 
@@ -10,7 +10,7 @@ GET     /texts                  controllers.Application.texts()
 POST     /texts                  controllers.Application.addTexts()
 POST /getStylometryInfoJSON					controllers.Application.getStylometryInfoJSON()
 POST /getAnonymouthInfoJSON					controllers.Application.getAnonymouthInfoJSON()
-
+POST /updatePadContents			controllers.Application.updatePadContents()
 
 
 GET /textanalysis				controllers.Application.textAnalysis()				

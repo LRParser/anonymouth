@@ -25,6 +25,8 @@ import edu.drexel.psal.jstylo.generics.Logger;
 import edu.drexel.psal.jstylo.generics.ProblemSet;
 import edu.drexel.psal.jstylo.service.*;
 
+import org.etherpad_lite_client.*;
+
 public class Application extends Controller {
     
     public static Result index() {
@@ -39,6 +41,8 @@ public class Application extends Controller {
     public static Result texts() {
     	return TODO;
     }
+    
+    
     
     private static String getStylometryAnalysis(String textInput) throws Exception
     {
@@ -68,12 +72,34 @@ public class Application extends Controller {
 		return wordsToRemove;   
     }
     
+    private static String getPadContents()
+    {
+    	EPLiteClient client = new EPLiteClient("http://localhost:9001", "V7u4gvgxSv99R9yTYz4uJzZkOWnR6lzz");
+    	String text = client.getText("Pad1").get("text").toString(); 
+    	return text;
+    }
+    
+    private static void appendTextToPad(String appendText)
+    {
+    	EPLiteClient client = new EPLiteClient("http://localhost:9001", "V7u4gvgxSv99R9yTYz4uJzZkOWnR6lzz");
+    	String text = client.getText("test").get("text").toString(); 
+    	client.setText("test",text+"Update: "+appendText);    
+    	client.sendClientsMessage("test",appendText);
+    }
+    
+    @BodyParser.Of(BodyParser.Json.class)
+    public static Result updatePadContents() throws Exception {
+      //RequestBody body = request().body();
+      //Logger.logln(body.asText());
+    	ObjectNode result = Json.newObject();
+    	return ok(result);
+    }
     
     private static String serializeWordsToRemove(ArrayList<String[]> wordsToRemove)
     {
         StringBuilder resultInfo = new StringBuilder();
         for(String[] toRemove : wordsToRemove) {
-            resultInfo.append(toRemove[0]+";");
+            resultInfo.append(toRemove[0]+", ");
         }
         return resultInfo.toString();
     	
@@ -112,6 +138,13 @@ public class Application extends Controller {
       } else {
         result.put("status", "OK");
         ArrayList<String[]> wordsToRemove = getAnonymouthAnalysis(textInput);
+              
+        // Send client words to remove info
+        String wordsToRemoveInfo = "JSAN suggests decreasing frequency of these words: "+serializeWordsToRemove(wordsToRemove);
+        
+        // Update the text pad
+        appendTextToPad(wordsToRemoveInfo);
+        
         result.put("message", serializeWordsToRemove(wordsToRemove));
         return ok(result);
       }
