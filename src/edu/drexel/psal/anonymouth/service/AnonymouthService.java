@@ -25,6 +25,11 @@ public class AnonymouthService {
 		ArrayList<String[]> wordsToRemove = pres.main.wordSuggestionsDriver.getTopToRemove();
 		// TODO: Fully de-couple UI from processing logic
 		Logger.logln("Words count: "+wordsToRemove.size());
+		
+		pres.main.anonymityBar.updateBar();
+		wordsToRemove.add(new String[] { "Current change needed: " + String.valueOf(pres.main.editorDriver.taggedDoc.getCurrentChangeNeeded()) });
+
+		
 		pres.main.dispose();
 		return wordsToRemove;
 	}

@@ -62,12 +62,12 @@ public class AnonymityBar extends JPanel {
 	private Color color = START_COLOR; //The current color of the bar, default is Red.
 	private int bottomY; //Where increases in the fill bar should start
 	private int topY; //The max Y value for increases in the fill bar, nothing should exceed this
-	private int curHeight; //The current height of the bar's fill
-	private float curPercent = 0.0f; //The current percent to the goal (10 for 10%, 25 for 25%, etc.)
-	private float newValue = 0.0f; //The new percent obtained from the tagged document (but not yet implemented)
+	public int curHeight; //The current height of the bar's fill
+	public float curPercent = 0.0f; //The current percent to the goal (10 for 10%, 25 for 25%, etc.)
+	public float newValue = 0.0f; //The new percent obtained from the tagged document (but not yet implemented)
 	private float maxFill = 100.0f; //The maximum value the fill can reach, MUST ONLY BE SET ONCE!
 	private boolean showFill;
-	private String percentString = "";
+	public String percentString = "";
 	
 	//Others
 	private GUIMain main;

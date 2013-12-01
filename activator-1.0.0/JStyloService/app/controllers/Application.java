@@ -39,7 +39,7 @@ public class Application extends Controller {
     }
     
     public static Result texts() {
-    	return TODO;
+        return ok(views.html.index.render("Stylometry Service"));
     }
     
     
@@ -111,13 +111,8 @@ public class Application extends Controller {
         final String textInput = values.get("textInput1")[0];
               
         String stylometryInfo = getStylometryAnalysis(textInput);
-        ArrayList<String[]> wordsToRemove = getAnonymouthAnalysis(textInput);
         StringBuilder resultInfo = new StringBuilder();
         resultInfo.append(stylometryInfo);
-        resultInfo.append("<br/>");
-        resultInfo.append("Words to remove: ");
-        resultInfo.append(serializeWordsToRemove(wordsToRemove));
-
         
         return ok(resultInfo.toString());
     }

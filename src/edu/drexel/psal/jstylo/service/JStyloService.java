@@ -14,7 +14,7 @@ public class JStyloService {
 	{
 		GUIMain main = new GUIMain();
 		main.analysisClassTestDocsJRadioButton.setSelected(true);
-		String problemSetPath = "jsan_resources/problem_sets/Anonymouth_docSet.xml";
+		String problemSetPath = "./problem_sets/Anonymouth_docSet.xml";
 		main.ps = new ProblemSet(problemSetPath);
 		// Select Basic-9 features
 		main.cfd = main.presetCFDs.get(3);

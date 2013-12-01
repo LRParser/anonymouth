@@ -51,8 +51,8 @@ public class ResultsWindow extends JFrame {
 	protected JScrollPane drawingScrollPane;
 	protected JPanel drawingPanel;
 	public JLabel resultsLabel;
-	private ArrayList<String> authors;
-	private ArrayList<Integer> percent;
+	public ArrayList<String> authors;
+	public ArrayList<Integer> percent;
 	private DefaultCategoryDataset dataSet;
 	private Font labelFont;
 	private int pictureWidth; //The width of the graph picture, NOT necessarily the width of the window holding it
